@@ -12,6 +12,6 @@ module.exports.run = function (connection) {
     return Promise.resolve()
         .then(() => lockTable.up(connection))
         .then(() => fieldLength.up(connection))
-        .then(() => useIndex.up(connection))
-        .then(() => addPKToLockTable.up(connection));
+        .then(() => useIndex.up(connection));
+        // .then(() => addPKToLockTable.up(connection));
 };
